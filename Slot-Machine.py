@@ -91,7 +91,9 @@ def main():
             print ("No winnings gained.")
             
         balance += payout
-        
+
+        if balance == 0:
+            break
         play_again = input("Would you like to spin again? (y/n): ").lower()
         
         if play_again != "y":
